@@ -1,3 +1,3 @@
-class Skill < ApplicationRecorqd
+class Skill < ApplicationRecord
 
 end

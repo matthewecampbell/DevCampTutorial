@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_17_171958) do
+ActiveRecord::Schema.define(version: 2020_04_30_153019) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "hstore"
@@ -25,11 +25,12 @@ ActiveRecord::Schema.define(version: 2020_04_17_171958) do
 
   create_table "portfolios", force: :cascade do |t|
     t.string "title"
-    t.string "subtite"
+    t.string "subtitle"
     t.text "body"
     t.text "main_image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "thumb_image"
   end
 
   create_table "skills", force: :cascade do |t|
